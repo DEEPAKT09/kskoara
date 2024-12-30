@@ -1,0 +1,10 @@
+    ADMIN:
+    username : admin
+    email : kskoara@gmail.com
+    password : admin123
+
+
+USER:
+ username : deepak
+    email : deepakthiruk912@gmail.com
+    password : loukik@0912

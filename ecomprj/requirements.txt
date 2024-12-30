@@ -1,0 +1,6 @@
+mysqlclient
+django
+django-jazzmin
+psycopg2
+django-jsonfield
+razorpay
