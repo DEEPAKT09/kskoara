@@ -188,6 +188,7 @@ def extract_sku_parts(full_sku):
     base_sku = '-'.join(parts[:-1])  # Join all parts except the last one (size)
     return base_sku
 
+@login_required
 def add_to_cart(request):
     if request.method == "POST":
         try:

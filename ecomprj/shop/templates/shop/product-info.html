@@ -2516,6 +2516,10 @@
     </script>
 
     <script>
+        const isLoggedIn = "{{ user.is_authenticated|yesno:'true,false' }}" === "true";
+    </script>
+
+    <script>
         document.addEventListener("DOMContentLoaded", function (event) {
             const btnPlus = document.getElementById("btnPlus");
             const btnMinus = document.getElementById("btnMinus");
@@ -2572,6 +2576,12 @@
             // Handle add to cart button click
             btnCart.addEventListener("click", function (event) {
                 event.preventDefault();
+                // Check if the user is logged in
+                if (!isLoggedIn) {
+                    alert("Please log in to add items to your cart.");
+                    return; // Stop further execution
+                }
+
                 try {
                     const sku = skuInput.value;  // Get the dynamically updated SKU
                     let qty = parseInt(txtQty.value, 10);
