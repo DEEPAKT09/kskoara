@@ -95,7 +95,7 @@ admin.site.register(Category)
 
 @admin.register(Orders)
 class OrdersAdmin(admin.ModelAdmin):
-    list_display = ('id', 'customer', 'total_price', 'status', 'created_at')
+    list_display = ('id', 'customer', 'total_price', 'status')
     list_editable = ('status',)
     search_fields = ('customer__username', 'id')
     list_filter = ('status', 'created_at', 'country', 'city')
