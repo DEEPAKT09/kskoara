@@ -1368,7 +1368,9 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="product-wrapper product-wrapper-two" data-aos="fade-right" data-aos-duration="100">
                         <div class="product-img">
-                            <img src="{{ product.product_image.url }}" alt="product-img" />
+                            <a href="{% url 'productsinfo' product.Category.name product.name %}">
+                                <img src="{{product.product_image.url }}" alt="product-img" />
+                            </a>
                             <!-- <div class="product-cart-items">
                                     <a href="#" class="cart cart-item">
                                         <span>
@@ -1814,8 +1816,9 @@
                 {% for item in category %}
                 <div class="product-wrapper" data-aos="fade-right" data-aos-duration="100">
                     <div class="wrapper-img">
-                        <img src="{{item.image.url}}" alt="shoes" />
                         <a href="{% url 'productssidebar' item.name  %}">
+                            <img src="{{item.image.url}}" alt="shoes" />
+                        </a>
                     </div>
                     <div class="wrapper-info">
                         <a href="{% url 'productssidebar' item.name  %}" class="wrapper-details">{{item.name}}</a>
@@ -2023,7 +2026,9 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="product-wrapper product-wrapper-two" data-aos="fade-right" data-aos-duration="100">
                             <div class="product-img">
-                                <img src="{{ product.product_image.url }}" alt="product-img" />
+                                <a href="{% url 'productsinfo' product.Category.name product.name %}">
+                                    <img src="{{ product.product_image.url }}" alt="product-img" />
+                                </a>
                                 <!-- <div class="product-cart-items">
                                     <a href="#" class="cart cart-item">
                                         <span>
@@ -2496,7 +2501,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="product-wrapper product-wrapper-two" data-aos="fade-right" data-aos-duration="100">
                             <div class="product-img">
-                                <img src="{{ product.product_image.url }}" alt="product-img" />
+                                <a href="{% url 'productsinfo' product.Category.name product.name %}">
+                                    <img src="{{ product.product_image.url }}" alt="product-img" /></a>
                                 <!-- <div class="product-cart-items">
                                     <a href="#" class="cart cart-item">
                                         <span>

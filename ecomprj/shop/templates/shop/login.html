@@ -1146,7 +1146,7 @@
             <div class="login-section">
                 <div class="review-form">
                     <h5 class="comment-title">Log In</h5>
-                    <form action="" method="post">
+                    <form action="{% url 'login'  %}" method="post">
                         {% csrf_token %}
                         <div class="review-inner-form ">
                             <div class="review-form-name">

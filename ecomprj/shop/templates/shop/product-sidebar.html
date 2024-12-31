@@ -1475,11 +1475,12 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="product-wrapper" data-aos="fade-up">
                                     <div class="product-img">
-                                        <img src="{{ grouped_product.product.product_image.url }}"
-                                            alt="{{ grouped_product.product.name }}">
                                         <a href="{% url 'productsinfo' category_name grouped_product.product.name %}">
-                                            <div class="product-cart-items">
-                                                <!-- <a href="#" class="cart cart-item">
+                                            <img src="{{ grouped_product.product.product_image.url }}"
+                                                alt="{{ grouped_product.product.name }}">
+                                        </a>
+                                        <div class="product-cart-items">
+                                            <!-- <a href="#" class="cart cart-item">
                                                     <span>
                                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -1511,7 +1512,7 @@
                                                         </svg>
                                                     </span>
                                                 </a> -->
-                                                <!-- <a href="wishlist.html" class="favourite cart-item">
+                                            <!-- <a href="wishlist.html" class="favourite cart-item">
                                                     <span>
                                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -1543,7 +1544,7 @@
                                                         </svg>
                                                     </span>
                                                 </a> -->
-                                            </div>
+                                        </div>
                                     </div>
                                     <div class="product-info">
                                         <div class="ratings">

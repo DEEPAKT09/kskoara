@@ -1174,7 +1174,7 @@
                             <h4 class="mb-0">Create Account</h4>
                         </div>
                         <div class="card-body">
-                            <form method="post" action="">
+                            <form method="post" action="{% url 'signup' %}">
                                 {% csrf_token %}
                                 <!-- <div class="mb-3">
                                     <label for="id_first_name" class="form-label fw-bold">First Name</label>
